@@ -1,0 +1,376 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@font-face {
+  font-family: "SFProText";
+  src: url("../assests/fonts/SFProText-Semibold.woff2") format("woff2"),
+    url("../assests/fonts/SFProText-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("../assests/fonts/SFProText-Bold.woff2") format("woff2"),
+    url("../assests/fonts/SFProText-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("../assests/fonts/SFProText-Thin.woff2") format("woff2"),
+    url("../assests/fonts/SFProText-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("../assests/fonts/SFProText-Medium.woff2") format("woff2"),
+    url("../assests/fonts/SFProText-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("../assests/fonts/SFProText-Light.woff2") format("woff2"),
+    url("../assests/fonts/SFProText-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("../assests/fonts/SFProText-Regular.woff2") format("woff2"),
+    url("../assests/fonts/SFProText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("../assests/fonts/SFProText-Heavy.woff2") format("woff2"),
+    url("../assests/fonts/SFProText-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: url("../assests/fonts/SFProText-Black.woff2") format("woff2"),
+    url("../assests/fonts/SFProText-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* globle start*/
+
+.btn {
+  border-radius: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-outline {
+  border: 1px solid #252525;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  border-color: #824db7;
+  background-color: #824db7;
+  color: #fff;
+}
+
+.btn:focus,
+button:focus {
+  box-shadow: none;
+}
+
+.btn-purple {
+  background-color: #824db7;
+  border-color: #824db7;
+  color: #fff;
+}
+
+.btn-purple:hover {
+  background-color: #824db7;
+  border-color: #824db7;
+  color: #fff;
+}
+
+.btn.disabled {
+  background-color: #dfdfdf;
+  border-color: #dfdfdf;
+  opacity: 1;
+}
+
+.form-control {
+  color: #202020 !important;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+
+/* globle end */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "SFProText";
+  background-color: #151515;
+  color: #202020;
+}
+
+.white-radius-box {
+  background-color: #fff;
+  border-radius: 48px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+}
+
+.landing {
+  padding-top: 60px;
+}
+
+.landing .box {
+  padding: 88px 51px 30px;
+  width: 456px;
+}
+
+.box {
+  position: relative;
+  max-width: 100%;
+}
+
+.login-logo {
+  position: absolute;
+  top: -54px;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+
+.box-heading {
+  font-size: 27px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+
+.tell-to-fans {
+  margin-top: 70px;
+  margin-bottom: 65px;
+  position: relative;
+}
+
+.tell-to-fans::before {
+  content: "";
+  /* background-image: url(../images/arrow.png); */
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -12px;
+  width: 46px;
+  height: 100px;
+  background-size: 100%;
+  top: -70px;
+}
+
+.tell-to-fans h1 {
+  margin: 0 0 10px;
+  font-weight: 900;
+  font-size: 39px;
+}
+
+.tell-to-fans .sub-heading {
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.social-login {
+  margin-bottom: 15px;
+}
+
+.social-login .btn {
+  width: 170px;
+}
+
+.already-member {
+  font-weight: 500;
+}
+
+.already-member a {
+  text-decoration: underline;
+  color: #202020;
+}
+
+.already-member a:hover {
+  color: #824db7;
+}
+
+/* login and sign up start */
+
+.login {
+  padding-top: 60px;
+}
+
+.login .box {
+  padding: 88px 30px 30px;
+  width: 415px;
+}
+
+.login .social-login {
+  margin-top: 55px;
+}
+
+.or {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.login-fields {
+  margin-top: 30px;
+}
+
+.login-fields .form-group {
+  margin-bottom: 35px;
+}
+
+.login-fields .form-control {
+  border: none;
+  border-bottom: 1px solid #979797;
+  border-radius: 0;
+  padding: 0;
+  font-weight: 500;
+  height: 40px;
+}
+
+.login .custom-control {
+  padding-left: 2rem;
+}
+
+.login .custom-control label {
+  font-size: 13px;
+  color: #999999;
+  font-weight: 500;
+}
+
+.login .custom-control-input {
+  width: 24px;
+}
+
+.login .custom-control-label::before {
+  width: 24px;
+  height: 24px;
+  left: -2rem;
+}
+
+.login .custom-control-label::after {
+  width: 24px;
+  height: 24px;
+  left: -2rem;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #824db7;
+  border-color: #824db7;
+}
+
+/* login and sign up end */
+
+/* footer start */
+
+.login-footer {
+  padding: 35px 0;
+}
+
+.login-footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.login-footer li {
+  margin: 0 15px;
+  font-weight: 500;
+  list-style: none;
+  color: #fff;
+}
+
+.login-footer li a {
+  color: #fff;
+}
+
+.link-forgot-password {
+  color: #bababa;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.link-forgot-password:hover {
+  color: #824db7;
+}
+
+/* footer end */
+
+@media screen and (max-width: 767px) {
+  .box {
+    max-width: 95%;
+  }
+  .login,
+  .landing {
+    padding-top: 80px;
+    max-width: 100%;
+  }
+  .login .box,
+  .landing .box {
+    padding: 88px 12px 30px;
+  }
+
+  .social-login .btn {
+    width: 48%;
+  }
+  .wrapper {
+    height: auto;
+  }
+  .tell-to-fans::before {
+    right: -32px;
+    width: 30px;
+    height: 66px;
+    top: -39px;
+  }
+  .tell-to-fans {
+    max-width: 290px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .tell-to-fans::before {
+    right: -15px;
+  }
+}
