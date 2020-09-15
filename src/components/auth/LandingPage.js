@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Auth } from 'aws-amplify';
 import TextField from '@material-ui/core/TextField';
 import { Link } from "react-router-dom";
+import { logo } from "../../assets/images/dropzne.png";
 
 class Landingpage extends Component {
   constructor(props) {
@@ -66,10 +67,14 @@ class Landingpage extends Component {
     return (
 
 
-      <div className="wrapper section auth">
-      <div className="login-wrapper">
-              <div className="login-box-outer">
-                  <div className="login-box white-radius-box">                     
+      <div className="wrapper">
+      <div className="landing d-flex flex-column flex-grow-1">
+              <div className="flex-grow-1 d-flex justify-content-center align-items-sm-center">
+                  <div className="white-radius-box">
+                    <a href="index.html" class="login-logo">
+                      <img src={logo} alt="">
+                        </a>
+                        <h5 class="box-heading text-center">MUSIC MON</h5>                   
                      
 
                   <div className="d-flex align-items-center justify-content-between social-login">
