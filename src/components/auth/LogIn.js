@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import FormErrors from "../utility/FormErrors";
 import { validateLogin } from "../utility/FormValidation";
-import { Auth } from "aws-amplify";
+import Amplify,{ Auth } from "aws-amplify";
 import { v4 as uuidv4 } from 'uuid';
 import TextField from '@material-ui/core/TextField';
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/dropzne.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../assets/css/style.css";
 
 
 class LogIn extends Component {
@@ -131,11 +134,15 @@ callAwsLogin = async (event) =>{
   render() {
     return (
 
-      <div className="wrapper section auth">
-      <div className="login-wrapper">
-              <div className="login-box-outer">
-                  <div className="login-box white-radius-box">
-                      <h5 className="box-heading text-center">Log in</h5>
+      <div className="wrapper">
+      <div className="login d-flex flex-column flex-grow-1">
+        <div className="flex-grow-1 d-flex justify-content-center flex-column align-items-sm-center">
+        <a href="/" className="login-logo">
+                      <img src={logo} alt="" />
+                    </a>
+          <div className="white-radius-box box">
+          
+              <h5 className="box-heading text-center">Log In</h5>
                       <FormErrors formerrors={this.state.errors} />
                         <form onSubmit={this.handleSubmit}>
                       <div className="login-fields">
@@ -163,20 +170,20 @@ callAwsLogin = async (event) =>{
                           </div>
 
                       </div>
-                      <div>
-                          <button className="btn btn-primary">Login</button>
+                      <div className="form-group text-center mt-4 mb-0">
+                              <a href="/ForgotPassword" class="link-forgot-password">Forgot Password?</a>
+                      </div>
+                      <div class="mt-5 field">
+                          <button className="btn btn-purple w-100 control">Login</button>
                       </div>
 
-                      <p className="already-member">Forgot password?
-                              <Link to="/forgotpassword">Forgot password?</Link>
-                      </p>
-
-                      <p className="already-member">Not a member?
-                        <Link to="/Register">Sign Up</Link>
-                        </p>
+      
 
                         
                       </form>
+                      <p className="already-member text-center mt-4 mb-0">Not a member?
+                        <Link to="/Register">Sign Up</Link>
+                        </p>
                   </div>
               </div>
           </div>

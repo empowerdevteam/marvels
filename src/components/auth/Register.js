@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import FormErrors from "../utility/FormErrors";
 import { validateSignUp } from "../utility/FormValidation";
-import { Auth } from "aws-amplify";
+import Amplify,{ Auth } from "aws-amplify";
 import TextField from '@material-ui/core/TextField';
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/dropzne.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../assets/css/style.css";
 
 class Register extends Component {
   state = {
@@ -73,11 +76,15 @@ class Register extends Component {
 
   render() {
     return (
-      <div className="login-wrapper auth">
-        {/* <div className="login-wrapper"> */}
-                <div className="login-box-outer">
-                    <div className="login-box white-radius-box">
-                        <h5 className="box-heading text-center">Sign Up</h5>
+      <div className="wrapper">
+      <div className="login d-flex flex-column flex-grow-1">
+        <div className="flex-grow-1 d-flex justify-content-center flex-column align-items-sm-center">
+        <a href="/" className="login-logo">
+                      <img src={logo} alt="" />
+                    </a>
+          <div className="white-radius-box box">
+          
+              <h5 className="box-heading text-center">SIGN UP</h5>
                         <FormErrors formerrors={this.state.errors} />
                           <form onSubmit={this.handleSubmit}>
                         <div className="login-fields">
@@ -128,16 +135,12 @@ class Register extends Component {
                             </div>
 
                         </div>
-                        <div>
-                            <button className="btn btn-primary">Sign Up</button>
-                        </div>
+                        <div class="mt-5 field">
+                          <button className="btn btn-purple w-100 control">Sign Up</button>
+                      </div>
 
-                        <p className="already-member">Forgot password?
-                                <Link to="/forgotpassword">Forgot password?</Link>
-                        </p>
-
-                        <p className="already-member">Not a member?
-                                <Link to="/LogIn">Login</Link>
+                      <p className="already-member text-center mt-4 mb-0">Already a member?
+                                <a href="/Login" class="ml-1">Log In</a>
                         </p>
                         </form>
                     </div>
@@ -226,6 +229,7 @@ class Register extends Component {
           </form>
         </div> */}
       </div>
+    </div>
     );
   }
 }

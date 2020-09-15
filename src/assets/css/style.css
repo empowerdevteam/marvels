@@ -855,7 +855,8 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    margin-top: -57px;
 }
 
 .tell-to-fans {
@@ -2650,7 +2651,7 @@ body {
         max-width: 100%;
     }
     .login .box, .landing .box {
-        padding: 88px 12px 30px;
+        padding: 88px 10px 20px;
         min-height: 460px;
     }
     .social-login .btn {

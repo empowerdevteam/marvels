@@ -93,10 +93,10 @@ class Landingpage extends Component {
                 </div>
                 
                 <div>
-                  <a href="/Register" class="btn btn-outline w-100">SIGN UP</a>
+                  <a href="/register" class="btn btn-outline w-100">SIGN UP</a>
                 </div>
                 <p className="already-member text-center mt-4 mb-0">Already a member?
-                                <a href="Log In" class="ml-1">Log In</a>
+                                <a href="/Login" class="ml-1">Log In</a>
                         </p>
 
 
