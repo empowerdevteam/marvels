@@ -72,7 +72,7 @@ class Landingpage extends Component {
               <div className="flex-grow-1 d-flex justify-content-center align-items-sm-center">
                   <div className="white-radius-box">
                     <a href="index.html" class="login-logo">
-                      <img src={logo} alt="">
+                      <img src={logo} alt=""/>
                         </a>
                         <h5 class="box-heading text-center">MUSIC MON</h5>                   
                      
