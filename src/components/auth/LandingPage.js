@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import { Auth } from 'aws-amplify';
+import Amplify,{ Auth } from 'aws-amplify';
 import TextField from '@material-ui/core/TextField';
 import { Link } from "react-router-dom";
-import {logo} from "../../assets/images/dropzne.png";
+import logo from "../../assets/images/dropzne.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../assets/css/style.css"
 
 class Landingpage extends Component {
   constructor(props) {
@@ -69,13 +71,13 @@ class Landingpage extends Component {
 
       <div className="wrapper">
       <div className="landing d-flex flex-column flex-grow-1">
-      <div className="flex-grow-1 d-flex justify-content-center align-items-sm-center">
+      <div className="flex-grow-1 d-flex justify-content-center flex-column align-items-sm-center">
+      <a href="/" className="login-logo">
+                      <img src={logo} alt="" />
+                    </a>
                   <div className="white-radius-box box">
-                    <a href="index.html" class="login-logo">
-                      <img src={logo} alt=" " />
-                        </a>
-                        <h5 class="box-heading text-center">MUSIC MON</h5>
-                        <div class="text-center tell-to-fans"></div>                
+                    
+              
                      
 
                   <div className="d-flex align-items-center justify-content-between social-login">

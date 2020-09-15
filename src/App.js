@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.scss';
 //import Navbar from './components/Navbar';
 import LogIn from './components/auth/LogIn';
 import Register from './components/auth/Register';
@@ -59,7 +58,7 @@ class App extends Component {
 
   return (
   !this.state.isAuthenticating &&
-  <div className="App">
+  <div className="App w-100">
   <Router>
   <Switch>
   <Route exact path="/Login" render={(props) => <LogIn {...props}auth={authProps}/>} />
