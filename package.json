@@ -25,7 +25,8 @@
     "postdeploy": "aws cloudfront create-invalidation --distribution-id YOUR_CF_DISTRIBUTION_ID --paths '/*' && aws cloudfront create-invalidation --distribution-id YOUR_WWW_CF_DISTRIBUTION_ID --paths '/*'",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "freshtall": "npm cache clean --force && rm -rf node_modules && rm -f package-lock.json && npm install"
   },
   "eslintConfig": {
     "extends": "react-app"
