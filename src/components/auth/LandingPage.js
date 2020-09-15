@@ -82,19 +82,12 @@ class Landingpage extends Component {
 
                   <div className="d-flex align-items-center justify-content-between social-login">
                   <button className="btn btn-outline btn-facebook" variant="outline-dark" onClick={() => Auth.federatedSignIn({provider: 'Facebook'})} onSubmit={this.handleSubmit}>
-                    <i className="fab fa-facebook-f fa-lg mr-2">
-                      ::before
-                      </i>
+                    <i className="fab fa-facebook-f fa-lg mr-2"></i>
                       Continue
                   </button>
 
-                  <button
-                    className="btn btn-outline btn-google"
-                    variant="outline-dark" onClick={() => Auth.federatedSignIn({provider: 'Google'})} onSubmit={this.handleSubmit}
-                  >
-                    <i className="fab fa-google fa-lg mr-2">
-                      ::before
-                      </i>
+                  <button className="btn btn-outline btn-google" variant="outline-dark" onClick={() => Auth.federatedSignIn({provider: 'Google'})} onSubmit={this.handleSubmit}>
+                    <i className="fab fa-google fa-lg mr-2"></i>
                       Continue
                   </button>
                 </div>
