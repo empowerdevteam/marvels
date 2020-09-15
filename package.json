@@ -19,7 +19,10 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "flow": "flow",
     "start": "react-scripts start",
+    "buildanddeploy": "react-scripts build&&aws s3 sync build/ s3://YOUR_S3_DEPLOY_BUCKET_NAME&&aws cloudfront create-invalidation --distribution-id YOUR_CF_DISTRIBUTION_ID --paths '/*'&&aws cloudfront create-invalidation --distribution-id YOUR_WWW_CF_DISTRIBUTION_ID --paths '/*'",
+    "postdeploy": "aws cloudfront create-invalidation --distribution-id YOUR_CF_DISTRIBUTION_ID --paths '/*' && aws cloudfront create-invalidation --distribution-id YOUR_WWW_CF_DISTRIBUTION_ID --paths '/*'",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -38,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "flow-bin": "^0.127.0"
   }
 }
