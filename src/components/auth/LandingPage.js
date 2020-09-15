@@ -70,31 +70,37 @@ class Landingpage extends Component {
       <div className="wrapper">
       <div className="landing d-flex flex-column flex-grow-1">
               <div className="flex-grow-1 d-flex justify-content-center align-items-sm-center">
-                  <div className="white-radius-box">
+                  <div className="white-radius-box box">
                     <a href="index.html" class="login-logo">
-                      <img src={logo} alt="No image"/>
+                      <img src={logo} alt=" " />
                         </a>
-                        <h5 class="box-heading text-center">MUSIC MON</h5>                   
+                        <h5 class="box-heading text-center">MUSIC MON</h5>
+                        <div class="text-center tell-to-fans">
+                          ::before
+                        </div>                
                      
 
                   <div className="d-flex align-items-center justify-content-between social-login">
-                  <button
-                    className="btn btn-outline btn-facebook"
-                    variant="outline-dark" onClick={() => Auth.federatedSignIn({provider: 'Facebook'})} onSubmit={this.handleSubmit}
-                  >
-                    <i className="fab fa-facebook-f fa-lg mr-2"></i>Continue
+                  <button className="btn btn-outline btn-facebook" variant="outline-dark" onClick={() => Auth.federatedSignIn({provider: 'Facebook'})} onSubmit={this.handleSubmit}>
+                    <i className="fab fa-facebook-f fa-lg mr-2">
+                      ::before
+                      </i>
+                      Continue
                   </button>
 
                   <button
                     className="btn btn-outline btn-google"
                     variant="outline-dark" onClick={() => Auth.federatedSignIn({provider: 'Google'})} onSubmit={this.handleSubmit}
                   >
-                    <i className="fab fa-google fa-lg mr-2"></i>Continue
+                    <i className="fab fa-google fa-lg mr-2">
+                      ::before
+                      </i>
+                      Continue
                   </button>
                 </div>
 
                 
-                <p className="already-member">Not a member?
+                <p className="already-member">Already a member?
                                 <Link to="/LogIn">Login</Link>
                         </p>
 
