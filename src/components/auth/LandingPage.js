@@ -75,9 +75,7 @@ class Landingpage extends Component {
                       <img src={logo} alt=" " />
                         </a>
                         <h5 class="box-heading text-center">MUSIC MON</h5>
-                        <div class="text-center tell-to-fans">
-                          ::before
-                        </div>                
+                        <div class="text-center tell-to-fans"></div>                
                      
 
                   <div className="d-flex align-items-center justify-content-between social-login">
@@ -91,14 +89,12 @@ class Landingpage extends Component {
                       Continue
                   </button>
                 </div>
-
                 
+                <div>
+                  <a href="/Register" class="btn btn-outline w-100">SIGN UP</a>
+                </div>
                 <p className="already-member">Already a member?
-                                <Link to="/LogIn">Login</Link>
-                        </p>
-
-                      <p className="already-member">Not a member?
-                        <Link to="/Register">Sign Up</Link>
+                                <Link to="/LogIn">Log In</Link>
                         </p>
 
 
