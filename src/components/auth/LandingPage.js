@@ -69,7 +69,7 @@ class Landingpage extends Component {
 
       <div className="wrapper">
       <div className="landing d-flex flex-column flex-grow-1">
-              <div className="flex-grow-1 d-flex justify-content-center align-items-sm-center">
+      <div className="flex-grow-1 d-flex justify-content-center align-items-sm-center">
                   <div className="white-radius-box box">
                     <a href="index.html" class="login-logo">
                       <img src={logo} alt=" " />
@@ -94,7 +94,7 @@ class Landingpage extends Component {
                   <a href="/Register" class="btn btn-outline w-100">SIGN UP</a>
                 </div>
                 <p className="already-member text-center mt-4 mb-0">Already a member?
-                                <Link to="/LogIn">Log In</Link>
+                                <a href="Log In" class="ml-1">Log In</a>
                         </p>
 
 
