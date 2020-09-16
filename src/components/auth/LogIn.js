@@ -142,7 +142,7 @@ callAwsLogin = async (event) =>{
                     </a>
           <div className="white-radius-box box">
           
-              <h5 className="box-heading text-center">Log In</h5>
+              <h5 className="box-heading-login text-center">Log In</h5>
                       <FormErrors formerrors={this.state.errors} />
                         <form onSubmit={this.handleSubmit}>
                       <div className="login-fields">

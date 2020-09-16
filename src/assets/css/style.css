@@ -855,6 +855,15 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3px;
+    margin-bottom: 15px;
+    margin-top: -42px;
+}
+
+.box-heading-login {
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
     margin-bottom: 20px;
     margin-top: -57px;
 }
@@ -919,7 +928,6 @@ body {
 .login .box {
     padding: 88px 30px 30px;
     width: 415px;
-    min-height: 620px;
 }
 
 .login .social-login {
@@ -2652,7 +2660,7 @@ body {
     }
     .login .box, .landing .box {
         padding: 88px 10px 20px;
-        min-height: 460px;
+       
     }
     .social-login .btn {
         width: 48%;
